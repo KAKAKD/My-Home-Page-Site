@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block customcss %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %} "}>
+{% endblock%}
+
+{% block content %}
+<div class="container">
+    <div class="form-box">
+        <h1 class="form-title">Contact</h1>
+        <form method="POST">{% csrf_token %}
+        <table class="form-table">
+            <tbody>
+            <tr>
+                <th>氏名</th>
+                <td>{{ form.name }}
+                </td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td>{{ form.email }}
+                </td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容</th>
+                <td>{{ form.message }}
+            </tr>
+            </tbody>
+        </table>
+        <button type="submit" class="form-btn">送信</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+        

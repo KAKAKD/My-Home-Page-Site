@@ -1,0 +1,10 @@
+
+.welcome-text {
+    text-align: center;
+    font-size: 8vw;
+    font-family: sans-serif;
+    margin: 150px 0 ;
+    text-shadow:5px 5px 5px silver;
+    font-style: italic;
+}
+

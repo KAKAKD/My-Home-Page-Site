@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block customcss %}
+<link rel="stylesheet" href="{% static 'css/about.css' %} "}>
+{% endblock%}
+
+{% block content %}
+<div class="container">
+    <div class="about-box">
+    <h1 class="about-title">About Me</h1>
+        <div class="about-profile">   
+            <h3>Profile</h3>
+            <p>Name :　 川村　蛍悟</p>
+            <p>Age :　 20歳</p>
+            <p>Hobby :　 スポーツ（特に野球とバスケが好きです。)　漫画、アニメ鑑賞</p>
+            <h3>Skills</h3>
+            <p>Python  　Django　  Javascript　  jquery　  HTML　  CSS　  Git </p>
+            <h3>学習に使ったもの</h3>
+            <p>webサービス　Progate　書籍　Python3入門ノート　あとはQita　MediumBlog　Youtubeなどの記事、動画で勉強しました。</p>
+            <h3>今後やりたいこと</h3>
+            <p>現在まで学んだことを活かしてアプリを作成すること。美味しいものが好きなので、世界食べ歩きツアーに行くこと。</p>
+            <h3>SNS</h3>
+            <p>github : <a href="https://github.com/KeigoKawamura">https://github.com/KeigoKawamura</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+    

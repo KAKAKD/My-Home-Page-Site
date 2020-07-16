@@ -1,0 +1,159 @@
+
+/* サイトのバランス */
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header-var Css */
+.nav {
+    background-color:#242830;
+    padding: 40px 0 60px;
+    width: 100%;
+}
+
+.nav-contain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 470px){
+    .ul {
+        display: inline;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+}
+
+/* nav-buttonアニメーション */
+.nav-a {
+    position: relative;
+    padding:1px;
+    text-decoration: none;
+    color: white;
+    transition:  0.4s;
+}
+
+.nav-title-link {
+    position: relative;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.header-navlinks:after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.header-navlinks:hover::after {
+    transform: scale(1,1);
+}
+
+/* container レスポンシブ */
+
+@media(min-width:1200px){
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+/* footer前の余白 */
+
+.footer-space {
+    text-align: center;
+    padding: 90px 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: #cccccc;
+}
+
+.footer-space :after {
+    margin: 0;
+}
+
+/* footer Css */
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-body {
+    padding: 100px 60px;
+    background: #242830;
+}
+
+.footer-ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding-inline-start: 0;
+    padding: 10px;
+}
+
+/* footerアニメーション */
+
+.footer-nav-a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    transition: 0.4s;
+}
+
+.footer-nav-a:hover {
+    color:  #0099FF;
+}
+
+.footer-underline {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-undertext {
+    font-size: 12px;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-underline {
+    color: #33CCFF;
+    background-color: #33CCFF;
+    width: 100px;
+}
+
+

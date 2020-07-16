@@ -1,0 +1,97 @@
+.post-collect {
+    margin: 150px 0;
+}
+
+.works-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2%;
+    font-family: cursive;
+}
+
+.post-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 33%;
+    padding: 10px;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 1px #999;
+}
+
+/* カードアニメーション */
+.card {
+    animation: fadeIn 4s ease 0s 1 normal;
+    -webkit-animation: fadeIn 4s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* safari用 */
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.works-line {
+    margin: 20px auto;
+    width: 30%;
+    border-color: #0099FF;
+}
+
+.card-link {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.page-link,
+.git-link {
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+    box-shadow:  1px 1px 5px 1px #999;
+    color: black;
+    width: 30%;
+
+}
+
+.git-link:hover,
+.page-link:hover{
+    color: #fff;
+    background-color: #242830;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 480px){
+    .card {
+        width: 100%;
+        display: block;
+    }
+}
+

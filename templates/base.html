@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Myhomepage</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple"rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    {% block customcss %}{% endblock %}
+</head>
+
+<body>
+    {% block header %}
+    <header>
+        <div class="nav">
+            <div class="container">
+                <div class="nav-contain">
+                    <a href="{% url 'homepage:index' %}" class="nav-title-link header-navlinks">Keigo's Site</a>
+                    <ul class="ul">
+                        <li class="nav-list"><a href="{% url 'homepage:about' %}" class="nav-a header-navlinks">About</a></li>
+                        <li class="nav-list"><a href="{% url 'homepage:works'%}" class="nav-a header-navlinks">Works</a></li>
+                        <li class="nav-list"><a href="{% url 'homepage:contact'%}" class="nav-a header-navlinks">Contact</a></li>     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    <div class="footer-space">
+        <div class="container">
+            <div class="space-text">
+                <p>Hello World !</p>
+                <p>もし何かあればContactよりお願いします。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-body">
+            <div class="container">
+                <ul class="footer-ul">
+                    <li class="nav-list"><a href="{% url 'homepage:about' %}" class="footer-nav-a">About</a></li>
+                    <li class="nav-list"><a href="{% url 'homepage:works'%}" class="footer-nav-a">Works</a></li>
+                    <li class="nav-list"><a href="{% url 'homepage:contact'%}" class="footer-nav-a">Contact</a></li>     
+                </ul>
+                <hr class="footer-underline">
+                <p class="footer-undertext">@2020 7 K HOMEPAGESITE</p>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+</html>
+    
+    
+    
+    
+    

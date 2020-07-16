@@ -1,0 +1,19 @@
+.about-box {
+    margin: 150px 0;
+    box-sizing: border-box;
+}
+
+.about-title {
+    padding: 20px 0;
+}
+
+.about-profile {
+    font-size: 15px;
+    line-height: 2rem;
+}
+
+@media screen and (max-width:470px){
+    .about-title {
+        text-align: center;
+    }
+}
