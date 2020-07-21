@@ -2,5 +2,5 @@
 Djangoで自分のHomePageを作りました。これから自分の作品が増えるごとに修正すると思います。
 
 
-PythonAnywhereにデプロイしたので下記からアクセスしてください。
+PythonAnywhereにデプロイしたので下記からアクセスしてください。<br>
 http://keigo0699.pythonanywhere.com
